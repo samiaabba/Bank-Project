@@ -11,7 +11,7 @@
 > **Important:** Each engineer is responsible for completing their assigned tasks and contributing their work to the team repository.
 ---------------------------------
 # Project Introduction
-In this project, you will work as a team of 3 DevOps engineers to build a simple command-line Bank Application using Bash. You will work together as a team, but each engineer will be responsible for specific tasks assigned in this document.
+In this project, you will work as a **team of 3 DevOps engineers** to build a simple command-line **Bank Application using Bash.** You will work together as a team, but each engineer will be responsible for specific tasks assigned in this document.
 
 The final application should provide basic banking functionality such as:
 
@@ -25,7 +25,7 @@ The following examples show the expected behavior of the Bank Application.
 > **Important:**Important: These are examples of the application's behavior, not the code you must write. Your team can implement the functionality in your own way.
 ------------------------------
 ## Step 1 — Start the Application
-When the application starts, it should display a menu. Expected output:
+When the application starts, it should display a menu. **Expected output:**
 
 -----------------------------
 Welcome to Simple Bank
@@ -42,12 +42,12 @@ The initial balance should be:
 ## Step 2 — Deposit Money
 The user selects option 1.
 
-Input:
+**Input:**
 
 Choose an option: 1
 The application asks for the deposit amount.
 
-Input:
+**Input:**
 
 Enter amount to deposit: 500
 The balance should increase by 500.
@@ -59,7 +59,7 @@ New balance: 1500
 ## Step 3 — Check Balance
 The user selects option 3.
 
-Input:
+**Input:**
 
 Choose an option: 3
 Expected output:
@@ -68,12 +68,12 @@ Your current balance: 1500
 ## Step 4 — Withdraw Money
 The user selects option 2.
 
-Input:
+**Input:**
 
 Choose an option: 2
 The application asks for the withdrawal amount.
 
-Input:
+**Input:**
 
 Enter amount to withdraw: 300
 The balance should decrease by 300.
@@ -85,7 +85,7 @@ New balance: 1200
 ## Step 5 — Check Balance Again
 The user selects option 3.
 
-Input:
+**Input:**
 
 Choose an option: 3
 Expected output:
@@ -94,7 +94,7 @@ Your current balance: 1200
 ## Step 6 — Try to Withdraw More Than the Balance
 The user selects option 2.
 
-Input:
+**Input:**
 
 Choose an option: 2
 Enter amount to withdraw: 2000
@@ -109,7 +109,7 @@ The balance should remain:
 ## Step 7 — Enter an Invalid Option
 The user enters an option that is not available in the menu.
 
-Input:
+**Input:**
 
 Choose an option: 9
 Expected output:
@@ -121,7 +121,7 @@ The application should continue running and display the menu again.
 ## Step 8 — Exit the Application
 The user selects option 4.
 
-Input:
+**Input:**
 
 Choose an option: 4
 Expected output:
@@ -332,15 +332,15 @@ The application structure follows the task requirements.
 
 The menu works correctly.
 
-Option 1 reaches the Deposit section.
+**Option 1** reaches the Deposit section.
 
-Option 2 reaches the Withdraw section.
+**Option 2** reaches the Withdraw section.
 
-Option 3 displays the initial balance 1000.
+O**ption 3** displays the initial balance 1000.
 
-Option 4 exits the application.
+**Option 4** exits the application.
 
-Invalid options are handled.
+**Invalid options are handled.**
 
 The application continues running where required.
 
@@ -357,7 +357,7 @@ If everything looks correct, leave a comment indicating that the implementation 
 ## 9. Merge the Pull Request
 Once Engineers 1 and 3 have reviewed the Pull Request and confirmed that the changes look correct, Engineer 2 will merge the Pull Request into main using the GitHub UI.
 
-Engineer 2 is responsible for performing the merge.
+**Engineer 2** is responsible for performing the merge.
 
 After the merge, the changes from:
 
@@ -376,10 +376,10 @@ Important: Engineer 2 should not merge the PR before Engineers 1 and 3 have comp
 👨‍💻 Assigned to: Engineer 3
 Engineer 3 is responsible for implementing the Deposit and Withdraw functionality.
 
-Requirements
+## Requirements
 Implement:
 
-Deposit
+- Deposit
 
 Accept a deposit amount.
 
@@ -387,7 +387,7 @@ Add the amount to the current balance.
 
 Display the updated balance.
 
-Withdraw
+- Withdraw
 
 Accept a withdrawal amount.
 
@@ -399,59 +399,59 @@ If insufficient, display an appropriate message.
 
 Display the updated balance when the withdrawal is successful.
 
-Check Balance
+- Check Balance
 
 Verify that option 3 displays the correct current balance after deposits and withdrawals.
 Important: Build on the existing application structure created in Step 2. Do not remove or break the existing menu and exit functionality.
 
-GitHub Workflow
-pull the latest changes on main
+## GitHub Workflow
+0. pull the latest changes on main
 
-Create a branch from the latest main called feature/deposit-withdraw
+1. Create a branch from the latest main called feature/deposit-withdraw
 
-Implement the required functionality.
+2. Implement the required functionality.
 
-Test the application.
+3. Test the application.
 
-Commit your changes with a meaningful commit message.
+4. Commit your changes with a meaningful commit message.
 
-Push the branch to GitHub.
+5. Push the branch to GitHub.
 
-Create a Pull Request through the GitHub UI.
+6. Create a Pull Request through the GitHub UI.
 
-Engineer 1 and Engineer 2 review the PR and comment on it.
+7. Engineer 1 and Engineer 2 review the PR and comment on it.
 
-Fix any issues identified during review.
+8. Fix any issues identified during review.
 
-Once the review is complete, Engineer 3 merges the PR into main through the GitHub UI.
+9. Once the review is complete, **Engineer 3 merges the PR into main through the GitHub UI.**
 
 By the end of this step:
 
-The core Bank Application must be fully functional and satisfy all the requirements and expected behaviors described in this project.
+T> **Important:** he core Bank Application must be fully functional and satisfy all the requirements and expected behaviors described in this project.
 
 The final application should support:
 
-Deposit
+. Deposit
 
-Withdraw
+. Withdraw
 
-Insufficient-funds handling
+. Insufficient-funds handling
 
-Check Balance
+. Check Balance
 
-Correct balance updates
+. Correct balance updates
 
-Invalid option handling
+. Invalid option handling
 
-Exit
+. Exit
 
-Complete menu flow
+. Complete menu flow
 
-All functionality tested
+. All functionality tested
 
-PR reviewed
+. PR reviewed
 
-Changes merged into main
+. Changes merged into main
 
 # Step 4 — Implement Account Statement
 👨‍💻 Assigned to: Engineer 1
@@ -484,13 +484,13 @@ Current Amount  : 1200
 
 The exact formatting is up to you, but the statement must clearly show these three values:
 
-Total Deposit — the total amount deposited during the session.
+** .Total Deposit** — the total amount deposited during the session.
 
-Total Withdraw — the total amount successfully withdrawn during the session.
+**. Total Withdraw**— the total amount successfully withdrawn during the session.
 
-Current Amount — the user's current balance.
+**. Current Amount** — the user's current balance.
 
-Example
+### Example
 Starting balance:
 
 1000
@@ -512,64 +512,64 @@ Total Withdraw  : 400
 Current Amount  : 1300
 -----------------------------
 
-Important
+### Important
 The values must be calculated from the actual transactions performed by the user.
 
 For example:
 
-A failed withdrawal due to insufficient funds should not increase Total Withdraw.
+. A failed withdrawal due to insufficient funds should not increase Total Withdraw.
 
-Deposits should increase Total Deposit.
+. Deposits should increase Total Deposit.
 
-Successful withdrawals should increase Total Withdraw.
+. Successful withdrawals should increase Total Withdraw.
 
-Current Amount should reflect the actual current balance.
+. Current Amount should reflect the actual current balance.
 
-Do not use fixed/hard-coded values for the statement.
+. Do not use fixed/hard-coded values for the statement.
 
-GitHub Workflow
-Create a branch from the latest main called feature/statement
+## GitHub Workflow
+1. Create a branch from the latest main called feature/statement
 
-Implement the Account Statement.
+2. Implement the Account Statement.
 
-Test it with multiple deposits and withdrawals.
+3. Test it with multiple deposits and withdrawals.
 
-Commit and push the branch.
+4. Commit and push the branch.
 
-Create a Pull Request through the GitHub UI.
+5. Create a Pull Request through the GitHub UI.
 
-Engineer 2 and Engineer 3 review the PR and comment on it.
+6. Engineer 2 and Engineer 3 review the PR and comment on it.
 
-Fix any issues identified during review.
+7. Fix any issues identified during review.
 
 Engineer 1 merges the PR into main after the review is complete.
 
-Step 4 Completion
-Account Statement option is available.
+## Step 4 Completion
+. Account Statement option is available.
 
-Total Deposit is correct.
+. Total Deposit is correct.
 
-Total Withdraw is correct.
+. Total Withdraw is correct.
 
-Current Amount is correct.
+. Current Amount is correct.
 
-Failed withdrawals are not counted.
+. Failed withdrawals are not counted.
 
-Statement reflects actual transactions.
+. Statement reflects actual transactions.
 
-Existing features still work.
+. Existing features still work.
 
-Application tested with multiple transactions.
+. Application tested with multiple transactions.
 
-PR created.
+. PR created.
 
-PR reviewed by Engineer 2 and Engineer 3.
+. PR reviewed by Engineer 2 and Engineer 3.
 
-PR merged into main.
+. PR merged into main.
 
-Final Goal: After this step, the team should have a complete Bank Application with working banking operations and an Account Statement.
+> **Important:**Final Goal: After this step, the team should have a complete Bank Application with working banking operations and an Account Statement.
 
-Final Team Verification
+## Final Team Verification
 After Step 4 has been merged into main, all three engineers must pull the latest main branch and test the complete application.
 
 Verify:
