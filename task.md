@@ -1,7 +1,4 @@
-# Bank-Project
-Project Bank Application
-Team Members
-Before starting the project, fill in the team members below:
+# Project Bank Application
 
 ## Team Members
 
@@ -12,8 +9,8 @@ Before starting the project, fill in the team members below:
 | Engineer 3 | Nafis Rashid |
 
 > **Important:** Each engineer is responsible for completing their assigned tasks and contributing their work to the team repository.
-
-Project Introduction
+---------------------------------
+# Project Introduction
 In this project, you will work as a team of 3 DevOps engineers to build a simple command-line Bank Application using Bash. You will work together as a team, but each engineer will be responsible for specific tasks assigned in this document.
 
 The final application should provide basic banking functionality such as:
@@ -22,12 +19,12 @@ Deposit money
 Withdraw money
 Check current balance
 Exit the application
-Example Input / Output
+## Example Input / Output
 The following examples show the expected behavior of the Bank Application.
 
-Important: These are examples of the application's behavior, not the code you must write. Your team can implement the functionality in your own way.
-
-Step 1 — Start the Application
+> **Important:**Important: These are examples of the application's behavior, not the code you must write. Your team can implement the functionality in your own way.
+------------------------------
+## Step 1 — Start the Application
 When the application starts, it should display a menu. Expected output:
 
 -----------------------------
@@ -41,7 +38,8 @@ Choose an option:
 The initial balance should be:
 
 1000
-Step 2 — Deposit Money
+
+## Step 2 — Deposit Money
 The user selects option 1.
 
 Input:
@@ -58,7 +56,7 @@ Expected output:
 
 Deposited 500.
 New balance: 1500
-Step 3 — Check Balance
+## Step 3 — Check Balance
 The user selects option 3.
 
 Input:
@@ -67,7 +65,7 @@ Choose an option: 3
 Expected output:
 
 Your current balance: 1500
-Step 4 — Withdraw Money
+## Step 4 — Withdraw Money
 The user selects option 2.
 
 Input:
@@ -84,7 +82,7 @@ Expected output:
 
 Withdrew 300.
 New balance: 1200
-Step 5 — Check Balance Again
+## Step 5 — Check Balance Again
 The user selects option 3.
 
 Input:
@@ -93,7 +91,7 @@ Choose an option: 3
 Expected output:
 
 Your current balance: 1200
-Step 6 — Try to Withdraw More Than the Balance
+## Step 6 — Try to Withdraw More Than the Balance
 The user selects option 2.
 
 Input:
@@ -108,7 +106,7 @@ Insufficient funds!
 The balance should remain:
 
 1200
-Step 7 — Enter an Invalid Option
+## Step 7 — Enter an Invalid Option
 The user enters an option that is not available in the menu.
 
 Input:
@@ -120,7 +118,7 @@ Invalid option!
 Please choose a valid option.
 The application should continue running and display the menu again.
 
-Step 8 — Exit the Application
+## Step 8 — Exit the Application
 The user selects option 4.
 
 Input:
@@ -131,23 +129,23 @@ Expected output:
 Goodbye!
 The application should then terminate.
 
-Step 1 — GitHub Repository Setup
+# Step 1 — GitHub Repository Setup
 👨‍💻 Assigned to: Engineer 1
 Engineer 1 is responsible for setting up the GitHub repository for the team.
 
-1. Create a GitHub Account
+## 1. Create a GitHub Account
 Create a GitHub account if you do not already have one.
 
 Skip this step if you already have a GitHub account.
 
-2. Create the Repository
+## 2. Create the Repository
 Engineer 1 must create a public GitHub repository with the following name:
 
 bank-project
 
 The repository should be owned by Engineer 1.
 
-3. Add Team Members as Collaborators
+## 3. Add Team Members as Collaborators
 Engineer 1 must add:
 
 Engineer 2
@@ -158,7 +156,7 @@ as collaborators to the repository.
 
 After this step, all three engineers should have access to the repository.
 
-4. Create task.md
+## 4. Create task.md
 Engineer 1 must:
 
 Copy this entire project document.
@@ -176,7 +174,7 @@ The repository should now look similar to:
 bank-project/
 └── task.md
 
-Step 2 — Create the Application Structure
+# Step 2 — Create the Application Structure
 👨‍💻 Assigned to: Engineer 2
 Engineer 2 is responsible for creating the initial structure of the Bank Application.
 
@@ -184,7 +182,7 @@ At this stage, you are not required to implement the Deposit or Withdraw functio
 
 The goal of this step is to create the basic Bash application structure that the other engineers can build upon.
 
-1. Create a Branch
+## 1. Create a Branch
 First, make sure your local repository is up to date with the main branch.
 
 Create a new branch from main.
@@ -194,7 +192,7 @@ You may use the following branch name:
 feature/application-structure
 Switch to the newly created branch and work only on this branch.
 
-2. Create the Bash Script
+## 2. Create the Bash Script
 Create the main Bash script for the application.
 
 Suggested filename:
@@ -207,7 +205,7 @@ The repository should now look similar to:
 bank-project/
 ├── task.md
 └── bank.sh
-3. Create the Basic Application Structure
+## 3. Create the Basic Application Structure
 The script should have the basic structure required for the Bank Application.
 
 It should:
@@ -231,7 +229,7 @@ Hint: You need a variable to store the balance. Decide the variable name and imp
 For example, the application should conceptually have:
 
 balance → 1000
-Option 1 — Deposit
+## Option 1 — Deposit
 When the user selects 1, the application should enter the Deposit section.
 
 For this step, simply display a message indicating that the Deposit section was selected.
@@ -241,7 +239,7 @@ Example:
 Deposit section
 No deposit calculation is required yet.
 
-Option 2 — Withdraw
+## Option 2 — Withdraw
 When the user selects 2, the application should enter the Withdraw section.
 
 For this step, simply display a message indicating that the Withdraw section was selected.
@@ -251,13 +249,13 @@ Example:
 Withdraw section
 No withdrawal calculation is required yet.
 
-Option 3 — Check Balance
+## Option 3 — Check Balance
 When the user selects 3, the application should display the current balance.
 
 At the beginning of the application, this should display:
 
 Your current balance: 1000
-Option 4 — Exit
+## Option 4 — Exit
 When the user selects 4, the application should terminate.
 
 Example:
@@ -280,7 +278,7 @@ Welcome to Simple Bank
 4. Exit
 -----------------------------
 Choose an option:
-4. Do Not Implement the Banking Logic Yet
+## 4. Do Not Implement the Banking Logic Yet
 For this step, Engineer 2 does not need to implement:
 
 Deposit calculation
@@ -291,14 +289,14 @@ The purpose of this step is to establish the application skeleton.
 
 The other engineers will build functionality on top of this structure in later steps.
 
-5. Commit Your Changes
+## 5. Commit Your Changes
 Create a meaningful commit message. Avoid meaningless commit messages such as:
 
 update
 test
 changes
 final
-6. Push the Branch
+## 6. Push the Branch
 Push your branch to GitHub:
 
 feature/application-structure
@@ -314,7 +312,7 @@ feature/application-structure
 │
 ├── task.md
 └── bank.sh
-7. Create a Pull Request
+## 7. Create a Pull Request
 After pushing your branch, create a Pull Request (PR) through the GitHub UI.
 
 The PR should be created from:
@@ -325,7 +323,7 @@ into:
 main
 Add a clear PR title and description explaining what you implemented.
 
-8. Review the Pull Request
+## 8. Review the Pull Request
 Engineer 1 and Engineer 3 must review the Pull Request.
 
 They should check whether:
@@ -356,7 +354,7 @@ If something needs to be changed, explain what needs to be fixed in the PR comme
 
 If everything looks correct, leave a comment indicating that the implementation has been reviewed.
 
-9. Merge the Pull Request
+## 9. Merge the Pull Request
 Once Engineers 1 and 3 have reviewed the Pull Request and confirmed that the changes look correct, Engineer 2 will merge the Pull Request into main using the GitHub UI.
 
 Engineer 2 is responsible for performing the merge.
@@ -374,7 +372,7 @@ bank-project/
 └── bank.sh
 Important: Engineer 2 should not merge the PR before Engineers 1 and 3 have completed their review.
 
-Step 3 — Implement Deposit and Withdraw
+# Step 3 — Implement Deposit and Withdraw
 👨‍💻 Assigned to: Engineer 3
 Engineer 3 is responsible for implementing the Deposit and Withdraw functionality.
 
@@ -455,7 +453,7 @@ PR reviewed
 
 Changes merged into main
 
-Step 4 — Implement Account Statement
+# Step 4 — Implement Account Statement
 👨‍💻 Assigned to: Engineer 1
 Engineer 1 is responsible for implementing the Account Statement feature.
 
