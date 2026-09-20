@@ -8,7 +8,7 @@ Before starting the project, fill in the team members below:
 | Role | Name |
 |---|---|
 | Engineer 1 | Samia Abba |
-| Engineer 2 | Madou Diallo |
+| Engineer 2 | Amadou Diallo |
 | Engineer 3 | Nafis Rashid |
 
 > **Important:** Each engineer is responsible for completing their assigned tasks and contributing their work to the team repository.
