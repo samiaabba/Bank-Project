@@ -3,11 +3,15 @@ Project Bank Application
 Team Members
 Before starting the project, fill in the team members below:
 
-Role	Name
-Engineer 1	Samia Abba
-Engineer 2	madou Diallo
-Engineer 3	Nafis Rashid
-Important: The engineer assigned to each task is responsible for completing that task and contributing it to the team repository.
+## Team Members
+
+| Role | Name |
+|---|---|
+| Engineer 1 | Samia Abba |
+| Engineer 2 | Madou Diallo |
+| Engineer 3 | Nafis Rashid |
+
+> **Important:** Each engineer is responsible for completing their assigned tasks and contributing their work to the team repository.
 
 Project Introduction
 In this project, you will work as a team of 3 DevOps engineers to build a simple command-line Bank Application using Bash. You will work together as a team, but each engineer will be responsible for specific tasks assigned in this document.
