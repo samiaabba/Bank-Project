@@ -427,7 +427,7 @@ Important: Build on the existing application structure created in Step 2. Do not
 
 By the end of this step:
 
-T> **Important:** he core Bank Application must be fully functional and satisfy all the requirements and expected behaviors described in this project.
+> **Important:** The core Bank Application must be fully functional and satisfy all the requirements and expected behaviors described in this project.
 
 The final application should support:
 
