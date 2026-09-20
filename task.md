@@ -15,10 +15,10 @@ In this project, you will work as a **team of 3 DevOps engineers** to build a si
 
 The final application should provide basic banking functionality such as:
 
-Deposit money
-Withdraw money
-Check current balance
-Exit the application
+- Deposit money
+- Withdraw money
+- Check current balance
+- Exit the application
 ## Example Input / Output
 The following examples show the expected behavior of the Bank Application.
 
@@ -40,7 +40,7 @@ The initial balance should be:
 1000
 
 ## Step 2 — Deposit Money
-The user selects option 1.
+The user selects **option 1.**
 
 **Input:**
 
@@ -57,7 +57,7 @@ Expected output:
 Deposited 500.
 New balance: 1500
 ## Step 3 — Check Balance
-The user selects option 3.
+The user selects **option 3.**
 
 **Input:**
 
@@ -66,7 +66,7 @@ Expected output:
 
 Your current balance: 1500
 ## Step 4 — Withdraw Money
-The user selects option 2.
+The user selects **option 2.**
 
 **Input:**
 
@@ -78,7 +78,7 @@ The application asks for the withdrawal amount.
 Enter amount to withdraw: 300
 The balance should decrease by 300.
 
-Expected output:
+**Expected output:**
 
 Withdrew 300.
 New balance: 1200
@@ -87,12 +87,12 @@ The user selects option 3.
 
 **Input:**
 
-Choose an option: 3
-Expected output:
+Choose an **option: 3**
+**Expected output:**
 
 Your current balance: 1200
 ## Step 6 — Try to Withdraw More Than the Balance
-The user selects option 2.
+The user selects **option 2.**
 
 **Input:**
 
@@ -100,7 +100,7 @@ Choose an option: 2
 Enter amount to withdraw: 2000
 Because the current balance is only 1200, the withdrawal should not happen.
 
-Expected output:
+**Expected output:**
 
 Insufficient funds!
 The balance should remain:
@@ -112,19 +112,19 @@ The user enters an option that is not available in the menu.
 **Input:**
 
 Choose an option: 9
-Expected output:
+**Expected output:**
 
 Invalid option!
 Please choose a valid option.
 The application should continue running and display the menu again.
 
 ## Step 8 — Exit the Application
-The user selects option 4.
+The user selects **option 4.**
 
 **Input:**
 
 Choose an option: 4
-Expected output:
+**Expected output:**
 
 Goodbye!
 The application should then terminate.
@@ -159,16 +159,16 @@ After this step, all three engineers should have access to the repository.
 ## 4. Create task.md
 Engineer 1 must:
 
-Copy this entire project document.
+1. Copy this entire project document.
 
-Create a new file named:
+2. Create a new file named:
 
 task.md
 
-Paste the project instructions into task.md.
-update the table, add teammates name
-Commit the file. (add meaningful message)
-Push it to the main branch.
+3. Paste the project instructions into task.md.
+4. update the table, add teammates name
+5. Commit the file. (add meaningful message)
+6. Push it to the main branch.
 The repository should now look similar to:
 
 bank-project/
@@ -176,9 +176,9 @@ bank-project/
 
 # Step 2 — Create the Application Structure
 👨‍💻 Assigned to: Engineer 2
-Engineer 2 is responsible for creating the initial structure of the Bank Application.
+Engineer 2 is responsible for creating the **initial structure of the Bank Application.**
 
-At this stage, you are not required to implement the Deposit or Withdraw functionality.
+At this stage, you are **not required to implement the Deposit or Withdraw functionality.**
 
 The goal of this step is to create the basic Bash application structure that the other engineers can build upon.
 
@@ -517,15 +517,15 @@ The values must be calculated from the actual transactions performed by the user
 
 For example:
 
-. A failed withdrawal due to insufficient funds should not increase Total Withdraw.
+- A failed withdrawal due to insufficient funds should not increase Total Withdraw.
 
-. Deposits should increase Total Deposit.
+- Deposits should increase Total Deposit.
 
-. Successful withdrawals should increase Total Withdraw.
+- Successful withdrawals should increase Total Withdraw.
 
-. Current Amount should reflect the actual current balance.
+- Current Amount should reflect the actual current balance.
 
-. Do not use fixed/hard-coded values for the statement.
+- Do not use fixed/hard-coded values for the statement.
 
 ## GitHub Workflow
 1. Create a branch from the latest main called feature/statement
@@ -545,27 +545,27 @@ For example:
 Engineer 1 merges the PR into main after the review is complete.
 
 ## Step 4 Completion
-. Account Statement option is available.
+- Account Statement option is available.
 
-. Total Deposit is correct.
+- Total Deposit is correct.
 
-. Total Withdraw is correct.
+- Total Withdraw is correct.
 
-. Current Amount is correct.
+- Current Amount is correct.
 
-. Failed withdrawals are not counted.
+- Failed withdrawals are not counted.
 
-. Statement reflects actual transactions.
+- Statement reflects actual transactions.
 
-. Existing features still work.
+- Existing features still work.
 
-. Application tested with multiple transactions.
+- Application tested with multiple transactions.
 
-. PR created.
+- PR created.
 
-. PR reviewed by Engineer 2 and Engineer 3.
+- PR reviewed by Engineer 2 and Engineer 3.
 
-. PR merged into main.
+- PR merged into main.
 
 > **Important:**Final Goal: After this step, the team should have a complete Bank Application with working banking operations and an Account Statement.
 
