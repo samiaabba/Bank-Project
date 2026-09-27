@@ -14,6 +14,7 @@ while true; do
         1)
             read -p "Enter amount deposit: " amount #500
                 if [[ $amount -ge 0 ]]; then
+<<<<<<< HEAD
                     balance=$((balance+amount)) #1000+500
                    
                     echo "New balance: $balance" #1
@@ -30,6 +31,22 @@ while true; do
                
                 echo "sufficient amount"
                 echo "New balance: $balance"
+=======
+                    deposit=$((init_balance+amount)) #1000+500
+                    echo "$deposit"
+                else
+                    echo "Invalid amount "
+                fi
+                #if [[ "$amount" =~ ^[0-9]+$ ]]; then
+            # echo "$deposit" #1500
+            # echo "Deposit section"
+            ;;
+        2)
+            read -p "Enter your Withdraw amount " withd
+            if [[ deposit -gt $withd ]]; then
+                deposit=$((deposit-withd))
+                echo "Sufficient amount $deposit"
+>>>>>>> 39b5fe474bd28b6890c40b0b917daeaa46ef73fa
             else
                 echo "Unfficient amount from balance $deposit"
                 
@@ -37,7 +54,11 @@ while true; do
            echo "Withdraw section"
            ;;
         3)
+<<<<<<< HEAD
             echo "Your current balance: $balance"
+=======
+            echo "Your current balance: $deposit"
+>>>>>>> 39b5fe474bd28b6890c40b0b917daeaa46ef73fa
             ;;
         4)
             echo "Goodbye!"
