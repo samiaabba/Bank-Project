@@ -1,4 +1,4 @@
-init_balance=1000
+balance=1000
 
 while true; do
     echo "----------------------------------------"
@@ -7,41 +7,59 @@ while true; do
     echo "2. Withdraw"
     echo "3. Check Balance"
     echo "4. Exit"
+    echo "5. Statments"
     echo "----------------------------------------"
     read -p  "Choose an option: " choose
     case $choose in
         1)
+            echo "-------Deposit section-------------"
             read -p "Enter amount deposit: " amount #500
                 if [[ $amount -ge 0 ]]; then
-                    deposit=$((init_balance+amount)) #1000+500
-                    echo "$deposit"
+                    balance=$((balance+amount)) #1000+500
+                   
+                    echo "New balance: $balance" #1
                 else
                     echo "Invalid amount "
                 fi
-                #if [[ "$amount" =~ ^[0-9]+$ ]]; then
-            # echo "$deposit" #1500
-            # echo "Deposit section"
+                
             ;;
         2)
+            echo "----------Withdraw section-------------"
             read -p "Enter your Withdraw amount " withd
-            if [[ deposit -gt $withd ]]; then
-                deposit=$((deposit-withd))
-                echo "Sufficient amount $deposit"
+
+            if [[ $withd -le $balance ]]; then #2000<=1500
+               balance=$((balance-withd))
+               
+                echo "sufficient amount"
+                echo "New balance: $balance"
             else
-                echo "Unfficient amount from balance $deposit"
+                echo " Insufficient-funds handling $balance"
                 
             fi
-           echo "Withdraw section"
            ;;
         3)
-            echo "Your current balance: $deposit"
+
+            echo "Your current balance: $balance"
+
+            #echo "Your current balance: $deposit"
+
             ;;
         4)
             echo "Goodbye!"
             exit 0 
             ;;
-        *)
+        
+        5)
+        echo "------------------------------------"
+        echo "Account Statment"
+        
+       echo "deposit : $amount"
+       echo "withdraw : $withd"
+       echo "curent balance : $balance"
+        ;;
+       *)
             echo "Invalide option!!"
             echo "Please choose a valid option"
+            ;;
     esac
 done
