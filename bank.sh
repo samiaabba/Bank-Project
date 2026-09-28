@@ -48,7 +48,7 @@ while true; do
                 echo "Sufficient amount $deposit"
 >>>>>>> 39b5fe474bd28b6890c40b0b917daeaa46ef73fa
             else
-                echo "Unfficient amount from balance $deposit"
+                echo "Unfficient amount from balance $balance"
                 
             fi
            echo "Withdraw section"
@@ -57,7 +57,7 @@ while true; do
 <<<<<<< HEAD
             echo "Your current balance: $balance"
 =======
-            echo "Your current balance: $deposit"
+           # echo "Your current balance: $deposit"
 >>>>>>> 39b5fe474bd28b6890c40b0b917daeaa46ef73fa
             ;;
         4)
