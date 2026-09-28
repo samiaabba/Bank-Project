@@ -18,6 +18,22 @@ while true; do
                     balance=$((balance+amount)) #1000+500
                    
                     echo "New balance: $balance" #1
+                    balance=$((balance+amount)) #1000+500
+                   
+                    echo "New balance: $balance" #1
+                else
+                    echo "Invalid amount "
+                fi
+                
+            ;;
+        2)
+            read -p "Enter your Withdraw amount " withd
+
+            if [[ $withd -le $balance ]]; then
+               balance=$((balance-withd))
+               
+                echo "sufficient amount"
+                echo "New balance: $balance"
                 else
                     echo "Invalid amount "
                 fi
@@ -34,6 +50,8 @@ while true; do
                 echo "New balance: $balance"
             else
                 echo " Insufficient-funds handling $balance"
+            else
+                echo "Unfficient amount from balance $balance"
                 
             fi
            ;;
@@ -43,6 +61,7 @@ while true; do
 
             #echo "Your current balance: $deposit"
 
+            echo "Your current balance: $balance"
             ;;
         4)
             echo "Goodbye!"
