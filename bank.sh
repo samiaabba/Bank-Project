@@ -12,6 +12,8 @@ while true; do
     case $choose in
         1)
             echo "Deposit section"
+            echo "==================="
+           # read -p "Enter Amount to deposit: " deposit
             ;;
         2)
            echo "Withdraw section"
