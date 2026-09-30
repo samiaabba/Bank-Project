@@ -16,6 +16,6 @@ Project Progress
  **Engineer 2 Amadou Diallo**
 - Created initial bank.sh
 - Added basic application structure
-## Step 3 - inprogress 
-
+## Step 3 - Completed 
+- create statements brunch 
 # bankcode
