@@ -12,19 +12,9 @@ while true; do
     read -p  "Choose an option: " choose
     case $choose in
         1)
-            echo "-------Deposit section-------------"
-            read -p "Enter amount deposit: " amount #500
-                if [[ $amount -ge 0 ]]; then
-                    balance=$((balance+amount)) #1000+500
-                   
-                    echo "New balance: $balance" #1
-                    balance=$((balance+amount)) #1000+500
-                   
-                    echo "New balance: $balance" #1
-                else
-                    echo "Invalid amount "
-                fi
-                
+            echo "Deposit section"
+            echo "==================="
+           # read -p "Enter Amount to deposit: " deposit
             ;;
         2)
             read -p "Enter your Withdraw amount " withd
