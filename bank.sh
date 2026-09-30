@@ -1,4 +1,4 @@
-init_balance=1000
+balance=1000
 
 while true; do
     echo "----------------------------------------"
@@ -7,6 +7,7 @@ while true; do
     echo "2. Withdraw"
     echo "3. Check Balance"
     echo "4. Exit"
+    echo "5. Statments"
     echo "----------------------------------------"
     read -p  "Choose an option: " choose
     case $choose in
@@ -16,17 +17,58 @@ while true; do
            # read -p "Enter Amount to deposit: " deposit
             ;;
         2)
-           echo "Withdraw section"
+            read -p "Enter your Withdraw amount " withd
+
+            if [[ $withd -le $balance ]]; then
+               balance=$((balance-withd))
+               
+                echo "sufficient amount"
+                echo "New balance: $balance"
+                else
+                    echo "Invalid amount "
+                fi
+                
+            ;;
+        2)
+            echo "----------Withdraw section-------------"
+            read -p "Enter your Withdraw amount " withd
+
+            if [[ $withd -le $balance ]]; then #2000<=1500
+               balance=$((balance-withd))
+               
+                echo "sufficient amount"
+                echo "New balance: $balance"
+            else
+                echo " Insufficient-funds handling $balance"
+            else
+                echo "Unfficient amount from balance $balance"
+                
+            fi
            ;;
         3)
-            echo "Your current balance: $init_balance"
+
+            echo "Your current balance: $balance"
+
+            #echo "Your current balance: $deposit"
+
+            echo "Your current balance: $balance"
             ;;
         4)
             echo "Goodbye!"
             exit 0 
             ;;
-        *)
+        
+        5)
+        echo "------------------------------------"
+        echo "Account Statment"
+        
+       echo "deposit : $amount"
+       echo "withdraw : $withd"
+       echo "curent balance : $balance"
+        ;;
+       *)
             echo "Invalide option!!"
             echo "Please choose a valid option"
+            ;;
     esac
 done
